@@ -1,6 +1,9 @@
 tic.exe
 panda-export.tic
 panda.html
+panda.min.js
 cartridge.html
+node_modules
+.local
 *.swp
 

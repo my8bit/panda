@@ -1,0 +1,31 @@
+{
+  "name": "pandajs",
+  "version": "1.0.0",
+  "description": "This is a remake of the '8 Bit Panda' platformer game originally developed by Bruno Oliveira",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-add-header-comment": "github:my8bit/babel-plugin-add-header-comment",
+    "babel-plugin-remove-comments": "^2.0.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-minify": "^0.2.0",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb": "^16.1.0"
+  },
+  "scripts": {
+    "prebuild": "eslint panda.js --fix",
+    "build": "babel panda.js -o panda.min.js",
+    "build:watch": "babel panda.js --watch -o panda.min.js",
+    "tic:lua": "sh run_tic.sh panda.lua",
+    "tic:js": "sh run_tic.sh panda.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:my8bit/pandajs.git"
+  },
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/my8bit/pandajs/issues"
+  }
+}

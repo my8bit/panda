@@ -1,0 +1,13 @@
+{
+  "presets": [["env", { "modules": false }], ["minify"]],
+  "comments": true,
+  "plugins": [
+    ["remove-comments"],
+    ["add-header-comment", {
+      "line": true,
+      "header": [
+        "script: js"
+      ]
+    }]
+  ]
+}
